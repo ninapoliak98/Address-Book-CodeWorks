@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="AddressBook.js"></script>
+    <title>Address Book</title>
+    
+</head>
+
+<body>
+    <!--Navigation-->
+    <div id='nav-bar' class="nav">
+        <ul id="nav-list" class="'nav-list">
+            <li class="bar" id="home">Add</li>
+            <li class="bar" id="search">Search</li>
+            <li class="bar" id="all-cont">All Contacts</li>
+        </ul>
+    </div>
+    <!--Search Bar-->
+    <div class="nav-all" id="search-bar">
+        <h1>Search Contacts</h1>
+        <form id='search' action=#>
+            <label> Search
+                <input type='text' name="search-contacts" id="search-c"
+                    placeholder="Enter name of contact you want to find">
+            </label>
+            <div class='btn' id="searchWrapper"><button id="search-btn">Search</button></div>
+        </form>
+    </div>
+    <div id="results" class="nav-all">
+        <p id="no-result" class="nav-all">No person with that name found please try again</p>
+        <table id="foundNames">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="cont-results">
+            </tbody>
+        </table>
+    </div>
+    <!--New Contact-->
+    <div class="nav-all" id="new-contact">
+        <form id="add-contact" action=#>
+            <h1>Add New Contacts</h1>
+            <label>
+                First Name
+                <input type='text' name="first-name" id='first-name' placeholder='Enter first name'>
+            </label>
+            <label>
+                Last Name
+                <input type='text' name="last-name" id='last-name' placeholder='Enter last name'>
+            </label>
+            <label>
+                Phone Number
+                <input type='tel' name="phone-number" id='phone-number' placeholder='Enter phone-number'>
+            </label>
+            Email
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <label>
+                Address
+                <input type="text" name="address" id="address" placeholder="Enter address">
+            </label>
+            <div class="btn" id="contact-btn">
+                <button id="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!--All added Contacts-->
+    <div class='nav-all' id="all-contacts">
+        <h1>Saved Contacts</h1>
+        <table id="all-saved-conts" class="'tbls">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

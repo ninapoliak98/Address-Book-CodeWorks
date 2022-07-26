@@ -1,0 +1,104 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #C49874;
+    color: #FFFAF0;
+}
+.nav-all{
+    background-color: #90AAAA;
+    padding:1em;
+    margin:auto;
+    width: fit-content;
+}
+#results{
+    background-color: #37486D;
+    max-width: fit-content;
+}
+label{
+    text-align: left;
+    display: block;
+    margin: 0.5rem 0;
+} 
+h1{
+    text-align: center;
+    margin: 1em auto;
+}
+form{
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 600px;
+    width: 60vw;
+}
+
+input{
+    margin: 10px;
+    width: 100%; 
+    margin-bottom: 0; 
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 2em;
+    background-color: #37486D;
+    border: 1px solid #37486D;
+    color: #FFFAF0;
+  }
+/*Button formating*/
+button{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #A37249;
+    color: #FFFAF0;
+    border: #A37249;
+    padding: 10px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.deleteBtn:hover{
+    background-color: #C49874;
+}
+button:hover{
+    background-color:#37486D;
+}
+.btn{
+   
+    text-align: center;
+}
+/*Nav bar formating*/
+ul{
+    list-style-type:none;
+}
+li{
+     display: inline;
+     border-collapse: collapse;
+     margin: 0%;
+     padding: 1em;
+    
+}
+li:hover{
+    background-color:#37486D;
+    }
+#nav-bar{
+    text-align: center;
+}
+/*Table formating*/
+table{
+    display: block;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    width: 100%;
+    max-width: 900px;
+    word-break: break-word
+   
+
+}
+th, tr, td, tbody{
+    border: solid #37486D;
+    padding: 10px 19px;
+
+}
+
